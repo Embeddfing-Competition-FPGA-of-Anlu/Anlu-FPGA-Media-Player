@@ -1,0 +1,23 @@
+Location         : D:\Desktop\prj 1\prj 1new\prj 1\src\td_project\HDMI1.4b_Transmitter_v1.0_Runs\syn_1
+Running with     : Tang Dynasty v6.2.168116
+                   Copyright (c) 2012-2025 Anlogic Inc.
+Top Model        : top
+Device           : EG4S20BG256
+Speed            : NA
+
+Timing Mode      : basic
+Setup            : WNS -2357ps  TNS  -150105ps  NUM_FEPS   259
+Hold             : WNS   421ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+---------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time   |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+---------------------------------------------------------------------------------------------------
+  optimize_gate  |    1     |  3m51s(78%)  |   224(78%)    |        806        |        810        
+  optimize_rtl   |    1     |  1m5s(21%)   |    62(21%)    |        651        |        698        
+  import_device  |    1     |    0s(0%)    |     0(0%)     |        83         |        83         
+    read_adc     |    1     |    0s(0%)    |     0(0%)     |        384        |        384        
+    read_sdc     |    3     |    0s(0%)    |     0(0%)     |        384        |        384        
+---------------------------------------------------------------------------------------------------
+      total      |    7     |    4m56s     |      286      |        806        |        810        
+---------------------------------------------------------------------------------------------------

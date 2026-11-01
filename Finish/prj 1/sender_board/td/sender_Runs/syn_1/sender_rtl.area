@@ -1,0 +1,49 @@
+standard
+***Report Model: sender_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        59
+  #input                   25
+  #output                  32
+  #inout                    2
+
+Gate Statistics
+#Basic gates             7311
+  #and                   1157
+  #nand                     0
+  #or                     754
+  #nor                      0
+  #xor                     39
+  #xnor                     0
+  #buf                      0
+  #not                    743
+  #bufif1                   4
+  #MX21                  2089
+  #FADD                     0
+  #DFF                   2525
+  #LATCH                    0
+#MACRO_ADD                320
+#MACRO_EQ                 215
+#MACRO_MULT                10
+#MACRO_MUX               3195
+#MACRO_OTHERS               7
+
+Report Hierarchy Area:
++-----------------------------------------------------------+
+|Instance        |Module            |gates  |seq    |macros |
++-----------------------------------------------------------+
+|top             |sender_top        |4786   |2525   |552    |
+|  u_cam_init    |ov5640_init       |1110   |138    |23     |
+|    u_rom       |ov5640_rom        |215    |0      |1      |
+|  u_cam_vid     |cam_video         |195    |736    |136    |
+|    u_tx        |uart_tx_byte      |8      |19     |4      |
+|  u_gimbal      |gimbal_control    |364    |171    |53     |
+|  u_gimbal_rx   |gimbal_command_rx |104    |37     |29     |
+|  u_oled        |oled_i2c_ssd1306  |80     |76     |24     |
+|  u_oled_screen |oled_screen       |1180   |522    |83     |
+|    u_font      |oled_font5x7      |131    |0      |0      |
+|  u_pan         |servo_pwm         |1      |36     |7      |
+|  u_rx          |uart_rx_byte      |15     |36     |4      |
+|  u_tilt        |servo_pwm         |1      |18     |5      |
+|  u_tx          |uart_tx_byte      |14     |47     |4      |
++-----------------------------------------------------------+

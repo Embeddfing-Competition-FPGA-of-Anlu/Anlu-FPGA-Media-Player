@@ -1,0 +1,52 @@
+standard
+***Report Model: sender_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        77
+  #input                   25
+  #output                  34
+  #inout                   18
+
+Gate Statistics
+#Basic gates             7571
+  #and                   2093
+  #nand                     0
+  #or                    1955
+  #nor                      0
+  #xor                     31
+  #xnor                     0
+  #buf                      0
+  #not                    482
+  #bufif1                  18
+  #MX21                  1079
+  #FADD                     0
+  #DFF                   1913
+  #LATCH                    0
+#MACRO_ADD                247
+#MACRO_EQ                 216
+#MACRO_MULT                 7
+#MACRO_MUX               2152
+#MACRO_OTHERS               6
+
+Report Hierarchy Area:
++--------------------------------------------------------------+
+|Instance           |Module            |gates  |seq    |macros |
++--------------------------------------------------------------+
+|top                |sender_top        |5658   |1913   |476    |
+|  u_cam_init       |ov5640_init       |1107   |138    |23     |
+|    u_rom          |ov5640_rom        |215    |0      |1      |
+|  u_cam_vid        |cam_video         |138    |534    |74     |
+|    u_tx           |uart_tx_byte      |8      |19     |4      |
+|  u_gimbal         |gimbal_control    |180    |168    |43     |
+|  u_gimbal_rx      |gimbal_command_rx |98     |37     |29     |
+|  u_mcu_seg_mirror |seg7_mcu_mirror   |2484   |244    |112    |
+|    u_font         |mcu_action_font   |0      |0      |1      |
+|    u_scan         |mcu_panel_scan    |2371   |165    |83     |
+|      u_bus        |mcu8080_bus       |34     |48     |5      |
+|      u_init       |mcu_panel_init    |232    |0      |51     |
+|    u_text         |mcu_action_text   |0      |0      |1      |
+|  u_pan            |servo_pwm         |1      |36     |7      |
+|  u_rx             |uart_rx_byte      |15     |36     |4      |
+|  u_tilt           |servo_pwm         |1      |18     |5      |
+|  u_tx             |uart_tx_byte      |14     |47     |4      |
++--------------------------------------------------------------+

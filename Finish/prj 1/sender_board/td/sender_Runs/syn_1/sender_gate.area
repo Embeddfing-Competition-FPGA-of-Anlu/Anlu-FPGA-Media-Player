@@ -1,0 +1,49 @@
+standard
+***Report Model: sender_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        59   out of    188   31.38%
+  #input                   25
+  #output                  32
+  #inout                    2
+
+LUT Statistics
+#Total_luts              4556
+  #lut4                  3720
+  #lut5                   836
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                     6470   out of  19600   33.01%
+#reg                     2415   out of  19600   12.32%
+#bram                      54   out of     64   84.38%
+  #bram9k                  54
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                       10   out of     29   34.48%
+#pad                       59   out of    188   31.38%
+  #ireg                    24
+  #oreg                    22
+  #treg                     4
+#pll                        0   out of      4    0.00%
+#gclk                       0   out of     16    0.00%
+
+Report Hierarchy Area:
++--------------------------------------------------------------------------------+
+|Instance        |Module            |lut     |ripple  |seq     |bram    |dsp     |
++--------------------------------------------------------------------------------+
+|top             |sender_top        |5513    |957     |2465    |54      |10      |
+|  u_cam_init    |ov5640_init       |541     |16      |134     |0       |0       |
+|  u_cam_vid     |cam_video         |792     |333     |668     |54      |4       |
+|    u_tx        |uart_tx_byte      |21      |0       |18      |0       |0       |
+|  u_gimbal      |gimbal_control    |465     |131     |171     |0       |0       |
+|  u_gimbal_rx   |gimbal_command_rx |119     |24      |37      |0       |0       |
+|  u_oled        |oled_i2c_ssd1306  |170     |24      |70      |0       |0       |
+|  u_oled_screen |oled_screen       |1516    |0       |522     |0       |1       |
+|  u_pan         |servo_pwm         |49      |28      |35      |0       |2       |
+|  u_rx          |uart_rx_byte      |53      |15      |35      |0       |0       |
+|  u_tilt        |servo_pwm         |29      |21      |17      |0       |2       |
+|  u_tx          |uart_tx_byte      |68      |9       |46      |0       |0       |
++--------------------------------------------------------------------------------+

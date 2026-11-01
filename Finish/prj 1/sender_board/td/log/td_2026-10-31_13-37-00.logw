@@ -1,0 +1,23 @@
+============================================================
+   Tang Dynasty, V6.2.168116
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/bin/td.exe
+   Built at =   16:32:07 Jun 12 2025
+   Run by =     14382
+   Run Date =   Sat Oct 31 13:37:00 2026
+
+   Run on =     LM
+============================================================
+HDL-8007 ERROR: illegal use of 'x' or 'z' character in a decimal number in ../src/sender_top.v(359)
+HDL-8007 ERROR: syntax error near '"OK' in ../src/sender_top.v(359)
+HDL-5007 WARNING: empty statement in sequential block in ../src/sender_top.v(359)
+HDL-8007 ERROR: 'dshow' is not declared in ../src/sender_top.v(506)
+HDL-8007 ERROR: 'dshow' is not declared in ../src/sender_top.v(506)
+HDL-8007 ERROR: 'dshow' is not declared in ../src/sender_top.v(506)
+HDL-8007 ERROR: 'dshow' is not declared in ../src/sender_top.v(506)
+HDL-8007 ERROR: 'dshow' is not declared in ../src/sender_top.v(515)
+HDL-8007 ERROR: 'dshow' is not declared in ../src/sender_top.v(515)
+HDL-8007 ERROR: 'dshow' is not declared in ../src/sender_top.v(515)
+HDL-8007 ERROR: 'dshow' is not declared in ../src/sender_top.v(535)
+HDL-8007 ERROR: 'dshow' is not declared in ../src/sender_top.v(538)
+HDL-8007 ERROR: ignore module module due to previous errors in ../src/sender_top.v(20)

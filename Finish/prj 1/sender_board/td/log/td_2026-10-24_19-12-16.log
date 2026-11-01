@@ -1,0 +1,97 @@
+============================================================
+   Tang Dynasty, V6.2.168116
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/bin/td.exe
+   Built at =   16:32:07 Jun 12 2025
+   Run by =     14382
+   Run Date =   Sat Oct 24 19:12:16 2026
+
+   Run on =     LM
+============================================================
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run syn_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run phy_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run syn_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run phy_1.
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-1007 : analyze verilog file ../src/uart_rx_byte.v
+HDL-1007 : analyze verilog file ../src/uart_tx_byte.v
+HDL-1007 : analyze verilog file ../src/sender_top.v
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run syn_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run phy_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run syn_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run phy_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run syn_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run phy_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run syn_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run phy_1.
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-1007 : analyze verilog file ../src/uart_rx_byte.v
+HDL-1007 : analyze verilog file ../src/uart_tx_byte.v
+HDL-1007 : analyze verilog file ../src/sender_top.v
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run syn_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run phy_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run syn_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run phy_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run syn_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run phy_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run syn_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run phy_1.
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-1007 : analyze verilog file ../src/uart_rx_byte.v
+HDL-1007 : analyze verilog file ../src/uart_tx_byte.v
+HDL-1007 : analyze verilog file ../src/sender_top.v
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run syn_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run phy_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run syn_1.
+PRJ-6609 WARNING: Cannot get launched time from configuration file for run phy_1.

@@ -1,0 +1,52 @@
+standard
+***Report Model: sender_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        77   out of    188   40.96%
+  #input                   25
+  #output                  34
+  #inout                   18
+
+LUT Statistics
+#Total_luts              3031
+  #lut4                  2573
+  #lut5                   458
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                     4669   out of  19600   23.82%
+#reg                     1846   out of  19600    9.42%
+#bram                      56   out of     64   87.50%
+  #bram9k                  56
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                        7   out of     29   24.14%
+#pad                       77   out of    188   40.96%
+  #ireg                    32
+  #oreg                    34
+  #treg                     2
+#pll                        0   out of      4    0.00%
+#gclk                       0   out of     16    0.00%
+
+Report Hierarchy Area:
++-----------------------------------------------------------------------------------+
+|Instance           |Module            |lut     |ripple  |seq     |bram    |dsp     |
++-----------------------------------------------------------------------------------+
+|top                |sender_top        |3850    |819     |1914    |56      |7       |
+|  u_cam_init       |ov5640_init       |539     |16      |134     |0       |0       |
+|  u_cam_vid        |cam_video         |452     |159     |505     |50      |1       |
+|    u_tx           |uart_tx_byte      |22      |0       |18      |0       |0       |
+|  u_gimbal         |gimbal_control    |362     |110     |168     |0       |0       |
+|  u_gimbal_rx      |gimbal_command_rx |107     |24      |37      |0       |0       |
+|  u_mcu_seg_mirror |seg7_mcu_mirror   |625     |122     |230     |6       |1       |
+|    u_font         |mcu_action_font   |15      |0       |0       |4       |0       |
+|    u_scan         |mcu_panel_scan    |518     |51      |151     |0       |1       |
+|      u_bus        |mcu8080_bus       |144     |5       |35      |0       |0       |
+|    u_text         |mcu_action_text   |0       |0       |0       |2       |0       |
+|  u_pan            |servo_pwm         |50      |28      |35      |0       |2       |
+|  u_rx             |uart_rx_byte      |51      |15      |35      |0       |0       |
+|  u_tilt           |servo_pwm         |29      |21      |17      |0       |2       |
+|  u_tx             |uart_tx_byte      |69      |9       |46      |0       |0       |
++-----------------------------------------------------------------------------------+

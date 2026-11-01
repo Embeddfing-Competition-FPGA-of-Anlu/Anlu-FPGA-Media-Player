@@ -1,0 +1,706 @@
+============================================================
+   Tang Dynasty, V6.2.168116
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/bin/td_commands_prompt.exe
+   Built at =   16:32:07 Jun 12 2025
+   Run by =     14382
+   Run Date =   Sun Nov  1 12:55:20 2026
+
+   Run on =     LM
+============================================================
+RUN-1002 : start command "import_device eagle_s20.db -package EG4S20BG256"
+RUN-1001 : Using default speed grade: NA
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "open_project sender.prj"
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-1007 : analyze verilog file ../../../src/uart_rx_byte.v
+HDL-1007 : analyze verilog file ../../../src/uart_tx_byte.v
+HDL-1007 : analyze verilog file ../../../src/ov5640_rom.v
+HDL-1007 : analyze verilog file ../../../src/ov5640_init.v
+HDL-1007 : analyze verilog file ../../../src/cam_video.v
+HDL-1007 : analyze verilog file ../../../src/servo_pwm.v
+HDL-1007 : analyze verilog file ../../../src/gimbal_command_rx.v
+HDL-1007 : analyze verilog file ../../../src/gimbal_control.v
+HDL-1007 : analyze verilog file ../../../src/sender_top.v
+HDL-1007 : analyze verilog file ../../../src/oled_font5x7.v
+HDL-1007 : analyze verilog file ../../../src/oled_i2c_ssd1306.v
+HDL-1007 : analyze verilog file ../../../src/oled_screen.v
+PRJ-1401 : Successfully analyzed 12 source files.
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+RUN-1002 : start command "elaborate -top sender_top"
+HDL-1007 : elaborate module sender_top in ../../../src/sender_top.v(20)
+HDL-1007 : elaborate module gimbal_control in ../../../src/gimbal_control.v(12)
+HDL-1007 : elaborate module servo_pwm in ../../../src/servo_pwm.v(4)
+HDL-1007 : elaborate module uart_tx_byte in ../../../src/uart_tx_byte.v(4)
+HDL-1007 : elaborate module uart_rx_byte in ../../../src/uart_rx_byte.v(3)
+HDL-1007 : elaborate module gimbal_command_rx in ../../../src/gimbal_command_rx.v(4)
+HDL-1007 : elaborate module ov5640_init in ../../../src/ov5640_init.v(6)
+HDL-1007 : elaborate module ov5640_rom in ../../../src/ov5640_rom.v(4)
+HDL-1007 : elaborate module cam_video in ../../../src/cam_video.v(16)
+HDL-1007 : extracting RAM for identifier 'lb1' in ../../../src/cam_video.v(77)
+HDL-1007 : extracting RAM for identifier 'lb2' in ../../../src/cam_video.v(77)
+HDL-1007 : extracting RAM for identifier 'pf' in ../../../src/cam_video.v(77)
+HDL-1007 : extracting RAM for identifier 'lbc' in ../../../src/cam_video.v(85)
+HDL-1007 : extracting RAM for identifier 'lbf1' in ../../../src/cam_video.v(136)
+HDL-1007 : extracting RAM for identifier 'lbf2' in ../../../src/cam_video.v(136)
+HDL-1007 : extracting RAM for identifier 'mem' in ../../../src/cam_video.v(186)
+HDL-1007 : elaborate module uart_tx_byte(CLKS_PER_BIT=16) in ../../../src/uart_tx_byte.v(4)
+HDL-1007 : elaborate module oled_screen in ../../../src/oled_screen.v(13)
+HDL-1007 : elaborate module oled_font5x7 in ../../../src/oled_font5x7.v(4)
+HDL-1007 : elaborate module oled_i2c_ssd1306(I2C_HZ=200000) in ../../../src/oled_i2c_ssd1306.v(8)
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+HDL-1200 : Current top model is sender_top
+HDL-1100 : Inferred 7 RAMs.
+RUN-1002 : start command "read_adc ../../../constraints/sender.adc"
+RUN-1002 : start command "set_pin_assignment  clk   LOCATION = R7; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  row[0]   LOCATION = E10; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  row[1]   LOCATION = C10; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  row[2]   LOCATION = F9; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  row[3]   LOCATION = D9; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  col[0]   LOCATION = E11; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  col[1]   LOCATION = D11; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  col[2]   LOCATION = C11; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  col[3]   LOCATION = F10; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  seg_sel[0]   LOCATION = C9; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  seg_sel[1]   LOCATION = B6; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  seg_sel[2]   LOCATION = A5; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  seg_sel[3]   LOCATION = A3; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  seg_led[0]   LOCATION = A4; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  seg_led[1]   LOCATION = A6; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  seg_led[2]   LOCATION = B8; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  seg_led[3]   LOCATION = E8; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  seg_led[4]   LOCATION = A7; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  seg_led[5]   LOCATION = B5; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  seg_led[6]   LOCATION = A8; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  seg_led[7]   LOCATION = C8; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  sw[0]   LOCATION = A9; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  sw[1]   LOCATION = A10; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  sw[2]   LOCATION = B10; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  sw[3]   LOCATION = A11; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  sw[4]   LOCATION = A12; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  sw[5]   LOCATION = B12; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  sw[6]   LOCATION = A13; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  sw[7]   LOCATION = A14; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  led[0]   LOCATION = B14; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  led[1]   LOCATION = B15; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  led[2]   LOCATION = B16; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  led[3]   LOCATION = C15; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  led[4]   LOCATION = C16; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  led[5]   LOCATION = E13; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  led[6]   LOCATION = E16; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  led[7]   LOCATION = F16; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  link_tx   LOCATION = M4; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; "
+RUN-1002 : start command "set_pin_assignment  link_rx   LOCATION = N3; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  cam_scl   LOCATION = R5; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  cam_sda   LOCATION = T6; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  cam_vsync   LOCATION = T4; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  cam_href   LOCATION = T5; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  cam_rst_n   LOCATION = T7; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  cam_pwdn   LOCATION = P6; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  cam_pclk   LOCATION = M6; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  cam_d[0]   LOCATION = T8; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  cam_d[1]   LOCATION = T9; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  cam_d[2]   LOCATION = R9; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  cam_d[3]   LOCATION = T12; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  cam_d[4]   LOCATION = R12; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  cam_d[5]   LOCATION = T13; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  cam_d[6]   LOCATION = N5; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  cam_d[7]   LOCATION = P5; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  servo_pan   LOCATION = M12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; "
+RUN-1002 : start command "set_pin_assignment  servo_tilt   LOCATION = N12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; "
+RUN-1002 : start command "set_pin_assignment  vid_tx   LOCATION = P12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; "
+RUN-1002 : start command "set_pin_assignment  oled_scl   LOCATION = D1; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  oled_sda   LOCATION = E1; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1001 : Starting of IO setups legality check.
+RUN-1001 : Starting of IO vref setups legality check.
+RUN-1002 : start command "read_sdc ../../../constraints/sender.sdc"
+RUN-1002 : start command "export_db sender_elaborate.db"
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported packer
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported ATMR Setting
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported ChipWatcher
+RUN-1002 : start command "commit_param -step rtl"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : -------------------------------------------------------------------
+RUN-1001 :         Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : -------------------------------------------------------------------
+RUN-1001 :        fix_undriven       |     0      |        0         |        
+RUN-1001 :   gated_clock_conversion  |    off     |       off        |        
+RUN-1001 :         infer_fsm         |    auto    |       auto       |        
+RUN-1001 :         infer_gsr         |    off     |       off        |        
+RUN-1001 :         infer_rom         |     on     |        on        |        
+RUN-1001 :       keep_hierarchy      |    auto    |       auto       |        
+RUN-1001 :        merge_equal        |     on     |        on        |        
+RUN-1001 :      min_control_set      |     8      |        8         |        
+RUN-1001 :       min_ripple_len      |    auto    |       auto       |        
+RUN-1001 :          seq_syn          |     on     |        on        |        
+RUN-1001 : -------------------------------------------------------------------
+RUN-1002 : start command "insert_debugger"
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/license/Anlogic.lic
+SYN-1001 : Stage 1 | Optimize RTL
+SYN-1001 : Stage 1.1 | Check Design Sanity
+SYN-1001 : End Stage 1.1 | Check Design Sanity; Time: 0.002482s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%); Memory(MB): used = 198, reserved = 309, peak = 198;
+
+SYN-1079 : finish stage Check Design Sanity. Total instances: 17837, Total nets: 36745.
+
+SYN-1001 : Stage 1.2 | Initialize Design
+SYN-1001 : End Stage 1.2 | Initialize Design; Time: 0.483967s wall, 0.484375s user + 0.000000s system = 0.484375s CPU (100.1%); Memory(MB): used = 198, reserved = 309, peak = 198;
+
+SYN-1079 : finish stage Initialize Design. Total instances: 3773, Total nets: 21107.
+
+SYN-1001 : Stage 1.3 | Flatten Module
+SYN-1011 : Flatten model sender_top
+SYN-1001 : End Stage 1.3 | Flatten Module; Time: 0.046164s wall, 0.046875s user + 0.000000s system = 0.046875s CPU (101.5%); Memory(MB): used = 198, reserved = 309, peak = 198;
+
+SYN-1079 : finish stage Flatten Module. Total instances: 3776, Total nets: 20633.
+
+SYN-1001 : Stage 1.4 | Uniform Instance
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-1001 : End Stage 1.4 | Uniform Instance; Time: 0.010158s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (153.8%); Memory(MB): used = 196, reserved = 307, peak = 198;
+
+SYN-1079 : finish stage Uniform Instance. Total instances: 3762, Total nets: 20613.
+
+SYN-1001 : Stage 1.5 | Optimize Design
+SYN-1066 : Inferred FSM for state register 'st_reg' in module 'sender_top'
+--------------------------------------------
+     Previous Encoding     New Encoding
+--------------------------------------------
+                  0000         00000001
+                  0001         00000010
+                  0010         00000100
+                  0011         00001000
+                  0100         00010000
+                  0101         00100000
+                  0110         01000000
+                  0111         10000000
+--------------------------------------------
+SYN-1067 : encoded FSM with state register 'st_reg' using encoding 'one_hot' in model 'sender_top'
+SYN-1066 : Inferred FSM for state register 'u_cam_init/ph_reg' in module 'sender_top'
+--------------------------------------------
+     Previous Encoding     New Encoding
+--------------------------------------------
+                  0000     000000000001
+                  0001     000000000010
+                  0010     000000000100
+                  0011     000000001000
+                  0100     000000010000
+                  0101     000000100000
+                  0110     000001000000
+                  0111     000010000000
+                  1000     000100000000
+                  1001     001000000000
+                  1010     010000000000
+                  1011     100000000000
+--------------------------------------------
+SYN-1067 : encoded FSM with state register 'u_cam_init/ph_reg' using encoding 'one_hot' in model 'sender_top'
+SYN-1066 : Inferred FSM for state register 'u_oled/st_reg' in module 'sender_top'
+--------------------------------------------
+     Previous Encoding     New Encoding
+--------------------------------------------
+                   000            00001
+                   001            00010
+                   010            00100
+                   011            01000
+                   100            10000
+--------------------------------------------
+SYN-1067 : encoded FSM with state register 'u_oled/st_reg' using encoding 'one_hot' in model 'sender_top'
+SYN-1066 : Inferred FSM for state register 'u_rx/state_reg' in module 'sender_top'
+--------------------------------------------
+     Previous Encoding     New Encoding
+--------------------------------------------
+                   000             0001
+                   001             0010
+                   010             0100
+                   011             1000
+--------------------------------------------
+SYN-1067 : encoded FSM with state register 'u_rx/state_reg' using encoding 'one_hot' in model 'sender_top'
+SYN-1057 : Inferred 4 FSM(s)
+SYN-1001 : Optimize 1 less-than instances
+SYN-1032 : 20800/10 useful/useless nets, 3721/0 useful/useless insts
+SYN-1021 : Optimized 17 onehot mux instances.
+SYN-1068 : Optimized 18 binary mux instances.
+SYN-1019 : Optimized 9 mux instances.
+SYN-1021 : Optimized 4 onehot mux instances.
+SYN-1001 : Optimize 3 less-than instances
+SYN-1016 : Merged 764 instances.
+SYN-1026 : Infer Logic BRAM(u_cam_vid/ramread0_syn_4)
+	 port mode: single dual port
+	 port a size: 256 x 8	 write mode: NORMAL
+	 port b size: 256 x 8	 write mode: READBEFOREWRITE
+SYN-1026 : Infer Logic BRAM(u_cam_vid/ramread1_syn_4)
+	 port mode: single dual port
+	 port a size: 256 x 8	 write mode: NORMAL
+	 port b size: 256 x 8	 write mode: READBEFOREWRITE
+SYN-1026 : Infer Logic BRAM(u_cam_vid/ramread2_syn_4)
+	 port mode: single dual port
+	 port a size: 32768 x 8	 write mode: NORMAL
+	 port b size: 32768 x 8	 write mode: READBEFOREWRITE
+SYN-1026 : Infer Logic BRAM(u_cam_vid/ramread3_syn_4)
+	 port mode: single port
+	 port a size: 256 x 8	 write mode: READBEFOREWRITE
+	 port b size: 256 x 8	 write mode: NORMAL
+SYN-1026 : Infer Logic BRAM(u_cam_vid/ramread4_syn_4)
+	 port mode: single port
+	 port a size: 256 x 8	 write mode: READBEFOREWRITE
+	 port b size: 256 x 8	 write mode: NORMAL
+SYN-1026 : Infer Logic BRAM(u_cam_vid/ramread5_syn_4)
+	 port mode: single port
+	 port a size: 32768 x 4	 write mode: READBEFOREWRITE
+	 port b size: 32768 x 4	 write mode: NORMAL
+SYN-1026 : Infer Logic BRAM(u_cam_vid/ramread6_syn_4)
+	 port mode: single port
+	 port a size: 256 x 16	 write mode: READBEFOREWRITE
+	 port b size: 256 x 16	 write mode: NORMAL
+SYN-1023 : Infer 0 Logic DRAMs, 7 Logic BRAMs.
+SYN-1016 : Merged 208 instances.
+SYN-1001 : End Stage 1.5 | Optimize Design; Time: 1.545415s wall, 1.546875s user + 0.000000s system = 1.546875s CPU (100.1%); Memory(MB): used = 263, reserved = 309, peak = 263;
+
+SYN-1079 : finish stage Optimize Design. Total instances: 11059, Total nets: 12776.
+
+SYN-1001 : Stage 1.6 | Optimize Iteratively
+SYN-1019 : Optimized 10 mux instances.
+SYN-1021 : Optimized 72 onehot mux instances.
+SYN-1014 : Optimize round 1
+SYN-1044 : Optimized 55 inv instances.
+SYN-1017 : Remove 15 const input seq instances
+SYN-1018 : Transformed 5 mux instances.
+SYN-1019 : Optimized 20 mux instances.
+SYN-1020 : Optimized 867 distributor mux.
+SYN-1001 : Optimize 59 less-than instances
+SYN-1019 : Optimized 28 mux instances.
+SYN-2595 : bram inst: u_cam_vid/ramread0_syn_4 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: u_cam_vid/ramread1_syn_4 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: u_cam_vid/ramread2_syn_4 is set to PDPW/SP from DP for resource saving
+SYN-1016 : Merged 1978 instances.
+SYN-1015 : Optimize round 1, 9967 better
+SYN-1014 : Optimize round 2
+SYN-1044 : Optimized 17 inv instances.
+SYN-1019 : Optimized 75 mux instances.
+SYN-1020 : Optimized 6 distributor mux.
+SYN-1019 : Optimized 16 mux instances.
+SYN-1016 : Merged 54 instances.
+SYN-1015 : Optimize round 2, 337 better
+SYN-3010 : Optimized 106 DFF(s)
+SYN-1014 : Optimize round 1
+SYN-1020 : Optimized 26 distributor mux.
+SYN-1019 : Optimized 6 mux instances.
+SYN-1016 : Merged 77 instances.
+SYN-1015 : Optimize round 1, 194 better
+SYN-1014 : Optimize round 2
+SYN-1044 : Optimized 2 inv instances.
+SYN-1019 : Optimized 2 mux instances.
+SYN-1020 : Optimized 5 distributor mux.
+SYN-1019 : Optimized 1 mux instances.
+SYN-1016 : Merged 8 instances.
+SYN-1015 : Optimize round 2, 18 better
+SYN-1014 : Optimize round 3
+SYN-1019 : Optimized 1 mux instances.
+SYN-1015 : Optimize round 3, 1 better
+SYN-1014 : Optimize round 4
+SYN-1015 : Optimize round 4, 0 better
+SYN-1001 : End Stage 1.6 | Optimize Iteratively; Time: 3.783280s wall, 3.703125s user + 0.062500s system = 3.765625s CPU (99.5%); Memory(MB): used = 256, reserved = 250, peak = 274;
+
+SYN-1079 : finish stage Optimize Iteratively. Total instances: 11065, Total nets: 12584.
+
+SYN-1001 : Stage 1.7 | Check Design
+SYN-1001 : End Stage 1.7 | Check Design; Time: 0.001507s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%); Memory(MB): used = 256, reserved = 251, peak = 274;
+
+SYN-1079 : finish stage Check Design. Total instances: 11065, Total nets: 12584.
+
+SYN-1001 : End Stage 1 | Optimize RTL; Time: 5.874196s wall, 5.796875s user + 0.062500s system = 5.859375s CPU (99.7%); Memory(MB): used = 256, reserved = 251, peak = 274;
+
+SYN-1079 : finish stage Optimize RTL. Total instances: 11065, Total nets: 12584.
+
+RUN-1003 : finish command "optimize_rtl" in  5.881666s wall, 5.812500s user + 0.062500s system = 5.875000s CPU (99.9%)
+
+RUN-1004 : used memory is 256 MB, reserved memory is 251 MB, peak memory is 274 MB
+RUN-1002 : start command "report_area -file sender_rtl.area"
+RUN-1001 : standard
+***Report Model: sender_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        59
+  #input                   25
+  #output                  32
+  #inout                    2
+
+Gate Statistics
+#Basic gates             7311
+  #and                   1157
+  #nand                     0
+  #or                     754
+  #nor                      0
+  #xor                     39
+  #xnor                     0
+  #buf                      0
+  #not                    743
+  #bufif1                   4
+  #MX21                  2089
+  #FADD                     0
+  #DFF                   2525
+  #LATCH                    0
+#MACRO_ADD                320
+#MACRO_EQ                 215
+#MACRO_MULT                10
+#MACRO_MUX               3195
+#MACRO_OTHERS               7
+
+RUN-1002 : start command "export_db sender_rtl.db"
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported packer
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported ATMR Setting
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported ChipWatcher
+RUN-1002 : start command "commit_param -step gate"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Gate Property
+RUN-1001 : -----------------------------------------------------------
+RUN-1001 :     Parameters    |  Settings  |  Default Values  |  Note  
+RUN-1001 : -----------------------------------------------------------
+RUN-1001 :     eram_init     |    off     |       off        |        
+RUN-1001 :      map_mode     |    auto    |       auto       |        
+RUN-1001 :    pack_effort    |   medium   |      medium      |        
+RUN-1001 :   pack_seq_in_io  |    auto    |       auto       |        
+RUN-1001 :       report      |  standard  |     standard     |        
+RUN-1001 : -----------------------------------------------------------
+RUN-1002 : start command "optimize_gate -packarea sender_gate.area"
+RUN-1001 : Open license file D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/license/Anlogic.lic
+SYN-1001 : Stage 2 | Optimize Gate
+SYN-1001 : Stage 2.1 | Map Reg
+SYN-1001 : End Stage 2.1 | Map Reg; Time: 0.129370s wall, 0.140625s user + 0.000000s system = 0.140625s CPU (108.7%); Memory(MB): used = 274, reserved = 384, peak = 276;
+
+SYN-1079 : finish stage Map Reg. Total instances: 11065, Total nets: 12584.
+
+SYN-1001 : Stage 2.2 | Map IO
+SYN-2001 : Map 59 IOs to PADs of model 'sender_top'
+SYN-1001 : End Stage 2.2 | Map IO; Time: 0.076153s wall, 0.078125s user + 0.000000s system = 0.078125s CPU (102.6%); Memory(MB): used = 274, reserved = 384, peak = 276;
+
+SYN-1001 : Stage 2.3 | Map Macro
+RUN-1002 : start command "update_pll_param -module sender_top"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Map 10 macro multiplier
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1016 : Merged 74 instances.
+SYN-2571 : Optimize after map_dsp, round 1, 74 better
+SYN-2571 : Optimize after map_dsp, round 2
+SYN-2571 : Optimize after map_dsp, round 2, 0 better
+SYN-1001 : Throwback 234 control mux instances
+SYN-1001 : Generate 15 bigger adders
+SYN-1001 : Optimize 39 adders
+SYN-2501 : Optimize round 1
+SYN-1016 : Merged 257 instances.
+SYN-2501 : Optimize round 1, 1474 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Optimize round 1
+SYN-1016 : Merged 4 instances.
+SYN-2501 : Optimize round 1, 6 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 318 macro adder(s)
+SYN-1019 : Optimized 513 mux instances.
+SYN-1016 : Merged 694 instances.
+SYN-1001 : End Stage 2.3 | Map Macro; Time: 1.673754s wall, 1.640625s user + 0.031250s system = 1.671875s CPU (99.9%); Memory(MB): used = 292, reserved = 390, peak = 292;
+
+SYN-1079 : finish stage Map Macro. Total instances: 16271, Total nets: 17670.
+
+SYN-1001 : Stage 2.4 | Map Gate
+SYN-3001 : Collect 3010 PI 1681 PO (33 timing unconstrained) for mapping
+SYN-2581 : Mapping with K=5, #lut = 4554 (3.54), #lev = 11 (3.94), #crit_level = 0
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=5, #lut = 4554 (3.54), #lev = 11 (3.89), #crit_level = 0
+SYN-3001 : Logic optimization opt = 1.06 sec, map = 0.50 sec, post map opt = 1.48 sec.
+SYN-3001 : Mapper removed 4 lut buffers
+SYN-1001 : End Stage 2.4 | Map Gate; Time: 4.298215s wall, 4.265625s user + 0.031250s system = 4.296875s CPU (100.0%); Memory(MB): used = 313, reserved = 390, peak = 313;
+
+SYN-1001 : Packing model "sender_top" ...
+SYN-4010 : Pack lib has 59 rtl pack models with 26 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 2415 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 87 carry chain into lslice
+SYN-4007 : Packing 1190 adder to BLE ...
+SYN-4008 : Packed 1190 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+RUN-1002 : start command "report_qor -step gate -file gate.qor"
+RUN-1002 : start command "start_timer"
+-----------------------------------------------------------
+| QoR metrics               |         value               |
+-----------------------------------------------------------
+| Timing                    |                             |
+|     Setup WNS             |         3903                |
+|     Setup TNS             |            0                |
+|     Num of violated S-EP  |            0                |
+|     Hold WNS              |          509                |
+|     Hold TNS              |            0                |
+|     Num of violated H-EP  |            0                |
+-----------------------------------------------------------
+| Utilization               |                             |
+|     #registers            |         2415                |
+|     #luts                 |         4556                |
+|     #lut1                 |           56                |
+|     #lut1(~A)             |           54                |
+|     #slices               |          957                |
+|     slices percentage     |        9.77%                |
+|     #RAMs                 |           54                |
+|     #DSPs                 |           10                |
+|     #f7mux                |        0.00%                |
+|     #MACROs               |          198                |
+|     #insts in MACRO       |          957                |
+-----------------------------------------------------------
+| kept_net                  |                             |
+|     #syn_keep             |            0                |
+|     #keep_hier            |            0                |
+|     #dont_touch           |            0                |
+|     #mark_debug           |            0                |
+|     #max_fanout_keep      |            0                |
+|     #async_reg            |            0                |
+-----------------------------------------------------------
+| Top 10% datanet fanout#   |        52.47                |
+| dff(single fanout)->dff   |          105                |
+| dff(single fanout)->dram  |            0                |
+-----------------------------------------------------------
+| Over-quota path num*      |                             |
+|     Total                 |            0                |
+-----------------------------------------------------------
+| Rent**                    |                             |
+-----------------------------------------------------------
+Note*: Over-quota path shows the over-path-level-threshold path number of each clock.
+       The clock will not be shown if no path is with path level over the threshold.
+       The threshold is defined as worst path_margin / 800ps.
+Note**: Rent shows the rent exponent value of the modules whose rent value exceeds the threshold.
+        Only modules under top are reported, and the threshold is defined as 0.7.
+
+Logic Level Distribution
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Clock     |  Period            |  0    |  1    |  2    |  3     |  4    |  5    |  6    |  7    |  8    |  9   |  10  |  11  |  12  |  13  |  14  |  16  |  17  |  19  |  21
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  cam_pclk  |  30.000ns (33MHz)  |  295  |  208  |  158  |  33    |  229  |  19   |  1    |  0    |  1    |  0   |  0   |  5   |  3   |  0   |  8   |  15  |  15  |  7   |  1
+  clk       |  20.000ns (50MHz)  |  597  |  240  |  373  |  2664  |  624  |  336  |  156  |  158  |  154  |  64  |  33  |  19  |  5   |  14  |  3   |  0   |  0   |  0   |  0
+  Total     |  NA                |  892  |  448  |  531  |  2697  |  853  |  355  |  157  |  158  |  155  |  64  |  33  |  24  |  8   |  14  |  11  |  15  |  15  |  7   |  1
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Note: The table count the worst 100000 paths, each endpoint count only one time.(6438 paths analyzed)
+
+Hierarchical Rent Exponent Report
++----------------------------------------------------------------------+
+|Inst            |Model         |Rent     |Cell     |Pin     |Term     |
++----------------------------------------------------------------------+
+|top             |sender_top    |0.18     |8051     |36610   |22       |
+|  u_oled_screen |oled_screen_6 |0.59     |2039     |9179    |390      |
+|  u_cam_vid     |cam_video_2   |0.45     |1518     |7874    |139      |
++----------------------------------------------------------------------+
+Note: Cell represents total number of cells inside module; Pin represents total number of pins
+      which have net connection inside module; Term represents total number of PIs and POs of module.
+      Rent represents the relationship between number of terms and number of cells in module.
+      A module with higher rent corresponds to highly connected logic and strong connectivity with others.
+Report gate stage QoR done.
+
+RUN-1002 : start command "report_area -file sender_gate.area"
+RUN-1001 : standard
+***Report Model: sender_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        59   out of    188   31.38%
+  #input                   25
+  #output                  32
+  #inout                    2
+
+LUT Statistics
+#Total_luts              4556
+  #lut4                  3720
+  #lut5                   836
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                     6470   out of  19600   33.01%
+#reg                     2415   out of  19600   12.32%
+#bram                      54   out of     64   84.38%
+  #bram9k                  54
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                       10   out of     29   34.48%
+#pad                       59   out of    188   31.38%
+  #ireg                    24
+  #oreg                    22
+  #treg                     4
+#pll                        0   out of      4    0.00%
+#gclk                       0   out of     16    0.00%
+
+SYN-1001 : End Stage 2 | Optimize Gate; Time: 7.712809s wall, 7.062500s user + 0.656250s system = 7.718750s CPU (100.1%); Memory(MB): used = 314, reserved = 390, peak = 314;
+
+RUN-1003 : finish command "optimize_gate -packarea sender_gate.area" in  7.719996s wall, 7.062500s user + 0.656250s system = 7.718750s CPU (100.0%)
+
+RUN-1004 : used memory is 314 MB, reserved memory is 390 MB, peak memory is 314 MB
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1001 : Stage 3 | Legalize Phy Inst
+SYN-1011 : Flatten model sender_top
+SYN-1001 : End Stage 3 | Legalize Phy Inst; Time: 0.015577s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%); Memory(MB): used = 314, reserved = 390, peak = 314;
+
+RUN-1002 : start command "update_timing"
+RUN-1002 : start command "start_timer"
+RUN-1002 : start command "report_timing_status -file sender_gate.ts"
+RUN-1002 : start command "report_timing_summary -file sender_gate.timing"
+RUN-1002 : start command "flow_status -file flow.status"
+Location         : C:\Users\14382\Desktop\Code\1\prj 1\sender_board\td\sender_Runs\syn_1
+Running with     : Tang Dynasty v6.2.168116
+                   Copyright (c) 2012-2025 Anlogic Inc.
+Top Model        : sender_top
+Device           : EG4S20BG256
+Speed            : NA
+
+Timing Mode      : basic
+Setup            : WNS  3903ps  TNS        0ps  NUM_FEPS     0
+Hold             : WNS   509ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+RUN-1001 : Flow Statistics:
+RUN-1001 : --------------------------------------------------------------------------------------------------
+RUN-1001 :      command     |  #calls  |  wall time  |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+RUN-1001 : --------------------------------------------------------------------------------------------------
+RUN-1001 :   optimize_gate  |    1     |   7s(58%)   |    7(58%)     |        314        |        314        
+RUN-1001 :   optimize_rtl   |    1     |   5s(41%)   |    5(41%)     |        256        |        274        
+RUN-1001 :   import_device  |    1     |   0s(0%)    |     0(0%)     |        83         |        83         
+RUN-1001 :     read_adc     |    1     |   0s(0%)    |     0(0%)     |        183        |        183        
+RUN-1001 :     read_sdc     |    1     |   0s(0%)    |     0(0%)     |        183        |        183        
+RUN-1001 : --------------------------------------------------------------------------------------------------
+RUN-1001 :       total      |    5     |     12s     |      12       |        314        |        314        
+RUN-1001 : --------------------------------------------------------------------------------------------------
+RUN-1002 : start command "export_db sender_gate.db"
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported packer
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported ATMR Setting
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported ChipWatcher
+RUN-1002 : start command "export_flow_status -s read_design -e opt_gate"
+RUN-1002 : start command "flow_status"
+
+Location         : C:\Users\14382\Desktop\Code\1\prj 1\sender_board\td\sender_Runs\syn_1
+Running with     : Tang Dynasty v6.2.168116
+                   Copyright (c) 2012-2025 Anlogic Inc.
+Top Model        : sender_top
+Device           : EG4S20BG256
+Speed            : NA
+
+Timing Mode      : basic
+Setup            : WNS  3903ps  TNS        0ps  NUM_FEPS     0
+Hold             : WNS   509ps  TNS        0ps  NUM_FEPS     0
+
+RUN-1001 : Flow Statistics:
+RUN-1001 : --------------------------------------------------------------------------------------------------
+RUN-1001 :      command     |  #calls  |  wall time  |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+RUN-1001 : --------------------------------------------------------------------------------------------------
+RUN-1001 :   optimize_gate  |    1     |   7s(58%)   |    7(58%)     |        314        |        314        
+RUN-1001 :   optimize_rtl   |    1     |   5s(41%)   |    5(41%)     |        256        |        274        
+RUN-1001 :   import_device  |    1     |   0s(0%)    |     0(0%)     |        83         |        83         
+RUN-1001 :     read_adc     |    1     |   0s(0%)    |     0(0%)     |        183        |        183        
+RUN-1001 :     read_sdc     |    1     |   0s(0%)    |     0(0%)     |        183        |        183        
+RUN-1001 : --------------------------------------------------------------------------------------------------
+RUN-1001 :       total      |    5     |     12s     |      12       |        314        |        314        
+RUN-1001 : --------------------------------------------------------------------------------------------------
+

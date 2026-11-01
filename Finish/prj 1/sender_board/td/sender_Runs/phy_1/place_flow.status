@@ -1,0 +1,21 @@
+Location         : C:\Users\14382\Desktop\Code\1\prj 1\sender_board\td\sender_Runs\phy_1
+Running with     : Tang Dynasty v6.2.168116
+                   Copyright (c) 2012-2025 Anlogic Inc.
+Top Model        : sender_top
+Device           : EG4S20BG256
+Speed            : NA
+
+Timing Mode      : manhattan
+Setup            : WNS  6829ps  TNS        0ps  NUM_FEPS     0
+Hold             : WNS   209ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+--------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time  |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+--------------------------------------------------------------------------------------------------
+      place      |    1     |  11s(100%)  |   34(100%)    |        331        |        331        
+    import_db    |    1     |   0s(0%)    |     0(0%)     |        160        |        160        
+  import_device  |    1     |   0s(0%)    |     0(0%)     |        84         |        84         
+--------------------------------------------------------------------------------------------------
+      total      |    3     |     11s     |      34       |        331        |        331        
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,137 @@
+standard
+***Report Model: sender_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        59   out of    188   31.38%
+  #input                   25
+  #output                  32
+  #inout                    2
+
+Utilization Statistics
+#lut                     6862   out of  19600   35.01%
+#reg                     2452   out of  19600   12.51%
+#le                      7083
+  #lut only              4631   out of   7083   65.38%
+  #reg only               221   out of   7083    3.12%
+  #lut&reg               2231   out of   7083   31.50%
+#bram                      54   out of     64   84.38%
+  #bram9k                  54
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                       10   out of     29   34.48%
+#pad                       59   out of    188   31.38%
+  #ireg                    24
+  #oreg                    22
+  #treg                     4
+#pll                        0   out of      4    0.00%
+#gclk                       1   out of     16    6.25%
+
+
+Detailed IO Report
+
+     Name       Direction    Location    IOStandard    IOType    DriveStrength    PullType     PackReg   
+   cam_d[7]       INPUT         P5        LVCMOS33      PAD           N/A          PULLUP       IREG     
+   cam_d[6]       INPUT         N5        LVCMOS33      PAD           N/A          PULLUP       IREG     
+   cam_d[5]       INPUT        T13        LVCMOS33      PAD           N/A          PULLUP       IREG     
+   cam_d[4]       INPUT        R12        LVCMOS33      PAD           N/A          PULLUP       IREG     
+   cam_d[3]       INPUT        T12        LVCMOS33      PAD           N/A          PULLUP       IREG     
+   cam_d[2]       INPUT         R9        LVCMOS33      PAD           N/A          PULLUP       IREG     
+   cam_d[1]       INPUT         T9        LVCMOS33      PAD           N/A          PULLUP       IREG     
+   cam_d[0]       INPUT         T8        LVCMOS33      PAD           N/A          PULLUP       IREG     
+   cam_href       INPUT         T5        LVCMOS33      PAD           N/A          PULLUP       IREG     
+   cam_pclk       INPUT         M6        LVCMOS33      PAD           N/A          PULLUP       NONE     
+  cam_vsync       INPUT         T4        LVCMOS33      PAD           N/A          PULLUP       IREG     
+     clk          INPUT         R7        LVCMOS33      PAD           N/A          PULLUP       NONE     
+    col[3]        INPUT        F10        LVCMOS33      PAD           N/A          PULLUP       IREG     
+    col[2]        INPUT        C11        LVCMOS33      PAD           N/A          PULLUP       IREG     
+    col[1]        INPUT        D11        LVCMOS33      PAD           N/A          PULLUP       IREG     
+    col[0]        INPUT        E11        LVCMOS33      PAD           N/A          PULLUP       IREG     
+   link_rx        INPUT         N3        LVCMOS33      PAD           N/A          PULLUP       IREG     
+    sw[7]         INPUT        A14        LVCMOS33      PAD           N/A          PULLUP       IREG     
+    sw[6]         INPUT        A13        LVCMOS33      PAD           N/A          PULLUP       IREG     
+    sw[5]         INPUT        B12        LVCMOS33      PAD           N/A          PULLUP       IREG     
+    sw[4]         INPUT        A12        LVCMOS33      PAD           N/A          PULLUP       IREG     
+    sw[3]         INPUT        A11        LVCMOS33      PAD           N/A          PULLUP       IREG     
+    sw[2]         INPUT        B10        LVCMOS33      PAD           N/A          PULLUP       IREG     
+    sw[1]         INPUT        A10        LVCMOS33      PAD           N/A          PULLUP       IREG     
+    sw[0]         INPUT         A9        LVCMOS33      PAD           N/A          PULLUP       IREG     
+   cam_pwdn      OUTPUT         P6        LVCMOS33      PAD            8            NONE        OREG     
+  cam_rst_n      OUTPUT         T7        LVCMOS33      PAD            8            NONE        OREG     
+    led[7]       OUTPUT        F16        LVCMOS33      PAD            8            NONE        NONE     
+    led[6]       OUTPUT        E16        LVCMOS33      PAD            8            NONE        NONE     
+    led[5]       OUTPUT        E13        LVCMOS33      PAD            8            NONE        NONE     
+    led[4]       OUTPUT        C16        LVCMOS33      PAD            8            NONE        NONE     
+    led[3]       OUTPUT        C15        LVCMOS33      PAD            8            NONE        NONE     
+    led[2]       OUTPUT        B16        LVCMOS33      PAD            8            NONE        NONE     
+    led[1]       OUTPUT        B15        LVCMOS33      PAD            8            NONE        NONE     
+    led[0]       OUTPUT        B14        LVCMOS33      PAD            8            NONE        NONE     
+   link_tx       OUTPUT         M4        LVCMOS33      PAD            8            NONE        OREG     
+   oled_scl      OUTPUT         D1        LVCMOS33      PAD            8           PULLUP       TREG     
+   oled_sda      OUTPUT         E1        LVCMOS33      PAD            8           PULLUP       TREG     
+    row[3]       OUTPUT         D9        LVCMOS33      PAD            8            NONE        OREG     
+    row[2]       OUTPUT         F9        LVCMOS33      PAD            8            NONE        OREG     
+    row[1]       OUTPUT        C10        LVCMOS33      PAD            8            NONE        OREG     
+    row[0]       OUTPUT        E10        LVCMOS33      PAD            8            NONE        OREG     
+  seg_led[7]     OUTPUT         C8        LVCMOS33      PAD            8            NONE        OREG     
+  seg_led[6]     OUTPUT         A8        LVCMOS33      PAD            8            NONE        OREG     
+  seg_led[5]     OUTPUT         B5        LVCMOS33      PAD            8            NONE        OREG     
+  seg_led[4]     OUTPUT         A7        LVCMOS33      PAD            8            NONE        OREG     
+  seg_led[3]     OUTPUT         E8        LVCMOS33      PAD            8            NONE        OREG     
+  seg_led[2]     OUTPUT         B8        LVCMOS33      PAD            8            NONE        OREG     
+  seg_led[1]     OUTPUT         A6        LVCMOS33      PAD            8            NONE        OREG     
+  seg_led[0]     OUTPUT         A4        LVCMOS33      PAD            8            NONE        OREG     
+  seg_sel[3]     OUTPUT         A3        LVCMOS33      PAD            8            NONE        OREG     
+  seg_sel[2]     OUTPUT         A5        LVCMOS33      PAD            8            NONE        OREG     
+  seg_sel[1]     OUTPUT         B6        LVCMOS33      PAD            8            NONE        OREG     
+  seg_sel[0]     OUTPUT         C9        LVCMOS33      PAD            8            NONE        OREG     
+  servo_pan      OUTPUT        M12        LVCMOS33      PAD            8            NONE        OREG     
+  servo_tilt     OUTPUT        N12        LVCMOS33      PAD            8            NONE        OREG     
+    vid_tx       OUTPUT        P12        LVCMOS33      PAD            8            NONE        OREG     
+   cam_scl        INOUT         R5        LVCMOS33      PAD            8           PULLUP       TREG     
+   cam_sda        INOUT         T6        LVCMOS33      PAD            8           PULLUP     IREG;TREG  
+
+Report Clock Domain Luts:
+
+---------------------------------------------------------------------------------------------------------------
+  Index   |  Name      |  Frequency   |  LUT As Logic   |  LUT As Shifter   |  LUT As Dram   |  BRAM   |  DSP
+---------------------------------------------------------------------------------------------------------------
+  #1      |  cam_pclk  |  33MHz       |  332            |  0                |  0             |  54     |  3
+  #2      |  clk       |  50MHz       |  2948           |  0                |  0             |  32     |  7
+---------------------------------------------------------------------------------------------------------------
+
+Clock Resource Statistics
+Index     ClockNet          Type               DriverType         Driver               Fanout
+#1        clk_dup_1         Global             io                 clk_syn_2.di         1547
+#2        cam_pclk_dup_1    Global             io                 cam_pclk_syn_2.di    304
+
+Report Hierarchy Area:
++-----------------------------------------------------------------------------------------+
+|Instance        |Module            |le      |lut     |ripple  |seq     |bram    |dsp     |
++-----------------------------------------------------------------------------------------+
+|top             |sender_top        |7083    |5905    |957     |2502    |54      |10      |
+|  u_cam_init    |ov5640_init       |613     |593     |16      |143     |0       |0       |
+|  u_cam_vid     |cam_video         |1409    |946     |333     |596     |54      |4       |
+|    u_tx        |uart_tx_byte      |23      |23      |0       |12      |0       |0       |
+|  u_gimbal      |gimbal_control    |606     |470     |131     |198     |0       |0       |
+|  u_gimbal_rx   |gimbal_command_rx |127     |103     |24      |38      |0       |0       |
+|  u_oled        |oled_i2c_ssd1306  |217     |179     |24      |68      |0       |0       |
+|  u_oled_screen |oled_screen       |1622    |1610    |0       |581     |0       |1       |
+|  u_pan         |servo_pwm         |104     |68      |28      |38      |0       |2       |
+|  u_rx          |uart_rx_byte      |79      |64      |15      |36      |0       |0       |
+|  u_tilt        |servo_pwm         |63      |31      |21      |14      |0       |2       |
+|  u_tx          |uart_tx_byte      |79      |70      |9       |42      |0       |0       |
++-----------------------------------------------------------------------------------------+
+
+
+DataNet Average Fanout:
+
+   Index     Fanout     Nets  
+    #1          1       4856  
+    #2          2       1232  
+    #3          3       665   
+    #4          4       305   
+    #5        5-10      630   
+    #6        11-50     428   
+    #7       51-100      35   
+    #8       101-500     1    
+  Average     3.24            

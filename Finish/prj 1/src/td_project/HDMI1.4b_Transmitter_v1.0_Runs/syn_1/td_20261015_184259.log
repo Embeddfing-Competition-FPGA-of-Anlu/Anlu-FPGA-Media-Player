@@ -1,0 +1,151 @@
+============================================================
+   Tang Dynasty, V6.2.168116
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/bin/td_commands_prompt.exe
+   Built at =   16:32:07 Jun 12 2025
+   Run by =     14382
+   Run Date =   Thu Oct 15 18:42:59 2026
+
+   Run on =     LM
+============================================================
+RUN-1002 : start command "import_device eagle_s20.db -package EG4S20BG256"
+RUN-1001 : Using default speed grade: NA
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "open_project HDMI1.4b_Transmitter_v1.0.prj"
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/ip/afifo_16_32_256.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/ip/afifo_32_16_256.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/ip/sys_pll.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../../user_source/hdl_source/ip/sys_pll.v(85)
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/ip/video_pll.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../../user_source/hdl_source/ip/video_pll.v(78)
+HDL-1007 : analyze verilog file ../../al_ip/PLL.v
+HDL-1007 : undeclared symbol 'PLL_open0', assumed default net type 'wire' in ../../al_ip/PLL.v(78)
+HDL-1007 : undeclared symbol 'PLL_open8', assumed default net type 'wire' in ../../al_ip/PLL.v(84)
+HDL-1007 : undeclared symbol 'PLL_open7', assumed default net type 'wire' in ../../al_ip/PLL.v(84)
+HDL-1007 : undeclared symbol 'PLL_open6', assumed default net type 'wire' in ../../al_ip/PLL.v(84)
+HDL-1007 : undeclared symbol 'PLL_open5', assumed default net type 'wire' in ../../al_ip/PLL.v(84)
+HDL-1007 : undeclared symbol 'PLL_open4', assumed default net type 'wire' in ../../al_ip/PLL.v(84)
+HDL-1007 : undeclared symbol 'PLL_open3', assumed default net type 'wire' in ../../al_ip/PLL.v(84)
+HDL-1007 : undeclared symbol 'PLL_open2', assumed default net type 'wire' in ../../al_ip/PLL.v(84)
+HDL-1007 : undeclared symbol 'PLL_open1', assumed default net type 'wire' in ../../al_ip/PLL.v(84)
+HDL-1007 : undeclared symbol 'PLL_open11', assumed default net type 'wire' in ../../al_ip/PLL.v(86)
+HDL-1007 : undeclared symbol 'PLL_open10', assumed default net type 'wire' in ../../al_ip/PLL.v(86)
+HDL-1007 : undeclared symbol 'PLL_open9', assumed default net type 'wire' in ../../al_ip/PLL.v(86)
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/hdmi_phy_warpper.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/lane_lvds_10_1.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/top_tf_hdmi_audio.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/color_bar.v
+HDL-1007 : analyze included file ../../../user_source/hdl_source/SD/video_define.v in ../../../user_source/hdl_source/SD/color_bar.v(2)
+HDL-1007 : back to file '../../../user_source/hdl_source/SD/color_bar.v' in ../../../user_source/hdl_source/SD/color_bar.v(2)
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/frame_fifo_read.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/frame_fifo_write.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/frame_read_write.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/sd_card_bmp.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/video_delay.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/video_timing_data.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/sd_card_cmd.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/sd_card_sec_read_write.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/sd_card_top.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/spi_master.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/sdram.v
+HDL-1007 : analyze included file C:\Users\14382\Desktop\Code\prj - 副本\src\td_project\/../user_source/hdl_source/include/global_def.v in ../../../user_source/hdl_source/SD/sdram.v(10)
+HDL-1007 : back to file '../../../user_source/hdl_source/SD/sdram.v' in ../../../user_source/hdl_source/SD/sdram.v(10)
+HDL-1007 : undeclared symbol 'SDR_CKE', assumed default net type 'wire' in ../../../user_source/hdl_source/SD/sdram.v(98)
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/include/sdr_as_ram.enc.v
+HDL-1007 : analyze included file ../../../user_source/hdl_source/include/global_def.v in ../../../user_source/hdl_source/include/sdr_as_ram.enc.v(10)
+HDL-1007 : back to file '../../../user_source/hdl_source/include/sdr_as_ram.enc.v' in ../../../user_source/hdl_source/include/sdr_as_ram.enc.v(10)
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
+HDL-1007 : back to file '../../../user_source/hdl_source/include/sdr_as_ram.enc.v' in ../../../user_source/hdl_source/include/sdr_as_ram.enc.v(45)
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/include/sdr_init_ref.enc.v
+HDL-1007 : analyze included file C:\Users\14382\Desktop\Code\prj - 副本\src\td_project\/../user_source/hdl_source/include/global_def.v in ../../../user_source/hdl_source/include/sdr_init_ref.enc.v(11)
+HDL-1007 : back to file '../../../user_source/hdl_source/include/sdr_init_ref.enc.v' in ../../../user_source/hdl_source/include/sdr_init_ref.enc.v(11)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in ../../../user_source/hdl_source/include/sdr_init_ref.enc.v(57)
+HDL-1007 : back to file '../../../user_source/hdl_source/include/sdr_init_ref.enc.v' in ../../../user_source/hdl_source/include/sdr_init_ref.enc.v(149)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../../user_source/hdl_source/include/sdr_init_ref.enc.v(47)
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/include/sdr_wrrd.enc.v
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../../user_source/hdl_source/include/sdr_wrrd.enc.v(283)
+HDL-1007 : back to file '../../../user_source/hdl_source/include/sdr_wrrd.enc.v' in ../../../user_source/hdl_source/include/sdr_wrrd.enc.v(19)
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/dual_key_long_hold_guard.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/dual_key_chord_router.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/media_policy.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/seg7_panel.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/audio/pcm_media_tone.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/audio/m06_pcm_contract_adapter.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/audio/media_hdmi_audio_bridge.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/hdmi_audio_symbol/hdmi_bch8.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/hdmi_audio_symbol/hdmi_terc4_encoder.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/hdmi_audio_symbol/hdmi_tmds_channel_encoder.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/hdmi_audio_symbol/hdmi_data_island_mapper.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/hdmi_audio_symbol/hdmi_data_island_scheduler.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/hdmi_audio_symbol/hdmi_audio_packet_scheduler.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/hdmi_audio_symbol/hdmi_audio_infoframe_packetizer.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/hdmi_audio_symbol/hdmi_audio_acr_packetizer.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/hdmi_audio_symbol/hdmi_audio_sample_packetizer.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/hdmi_audio_symbol/hdmi_audio_symbol_core.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/reset_sync.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/sync_2ff.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/sd_sector_adapter.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/fat32_volume_scanner.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/fat32_file_streamer.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/fat32_bmp_reader.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/common/dp_ram_2clk.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/common/async_byte_fifo.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/common/cdc_bus_sync.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/audio/wav_stream_parser.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/audio/wav_pcm_source.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/audio/audio_play_ctrl.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/bank_preload_ctrl.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/SD/bank_nav_ctrl.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/video/thumb_capture.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/video/thumb_view.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/video/brightness_contrast_adjust.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/video/video_fade_transition.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/video/status_osd_overlay.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/video/osd_overlay_24.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/video/promax_audio_waveform.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/video/player_text_overlay.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/video/media_pixel_pipeline.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/spectrum/spectrum_dft64.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/spectrum/spectrum_overlay.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/video/conv3x3_filter.v
+HDL-1007 : analyze verilog file ../../../user_source/hdl_source/video/alert_overlay.v
+HDL-8007 ERROR: syntax error near 'cell' in ../../../user_source/hdl_source/video/alert_overlay.v(103)
+HDL-8007 ERROR: syntax error near 'cell' in ../../../user_source/hdl_source/video/alert_overlay.v(104)
+HDL-8007 ERROR: syntax error near 'cell' in ../../../user_source/hdl_source/video/alert_overlay.v(107)
+HDL-8007 ERROR: 'cx' is not declared in ../../../user_source/hdl_source/video/alert_overlay.v(105)
+HDL-8007 ERROR: 'alert_char' requires 1 arguments in ../../../user_source/hdl_source/video/alert_overlay.v(107)
+HDL-8007 ERROR: ignore module module due to previous errors in ../../../user_source/hdl_source/video/alert_overlay.v(7)
+PRJ-8644 ERROR: Failed to analyze source file(s).
+

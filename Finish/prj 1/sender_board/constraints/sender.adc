@@ -1,0 +1,71 @@
+# 发送板 DMZ_EG4S20（EG4S20BG256），引脚取自板卡例程 Exp10/Exp11/Exp12 和用户指定的串口脚
+set_pin_assignment	{ clk }	{ LOCATION = R7; IOSTANDARD = LVCMOS33; }
+# 4x4 键盘：行输出（低有效扫描），列输入（上拉，按下为 0）
+set_pin_assignment	{ row[0] }	{ LOCATION = E10; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ row[1] }	{ LOCATION = C10; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ row[2] }	{ LOCATION = F9; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ row[3] }	{ LOCATION = D9; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ col[0] }	{ LOCATION = E11; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ col[1] }	{ LOCATION = D11; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ col[2] }	{ LOCATION = C11; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ col[3] }	{ LOCATION = F10; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+# 4 位数码管：位选低有效，段码高有效（bit7 = 小数点）
+set_pin_assignment	{ seg_sel[0] }	{ LOCATION = C9; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ seg_sel[1] }	{ LOCATION = B6; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ seg_sel[2] }	{ LOCATION = A5; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ seg_sel[3] }	{ LOCATION = A3; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ seg_led[0] }	{ LOCATION = A4; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ seg_led[1] }	{ LOCATION = A6; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ seg_led[2] }	{ LOCATION = B8; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ seg_led[3] }	{ LOCATION = E8; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ seg_led[4] }	{ LOCATION = A7; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ seg_led[5] }	{ LOCATION = B5; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ seg_led[6] }	{ LOCATION = A8; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ seg_led[7] }	{ LOCATION = C8; IOSTANDARD = LVCMOS33; }
+# 8 位拨码（Exp11 的 BCD_preset）
+set_pin_assignment	{ sw[0] }	{ LOCATION = A9; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ sw[1] }	{ LOCATION = A10; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ sw[2] }	{ LOCATION = B10; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ sw[3] }	{ LOCATION = A11; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ sw[4] }	{ LOCATION = A12; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ sw[5] }	{ LOCATION = B12; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ sw[6] }	{ LOCATION = A13; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ sw[7] }	{ LOCATION = A14; IOSTANDARD = LVCMOS33; }
+# 8 个 LED（与 R-2R DAC 共用 DA_Data[7:0]）
+set_pin_assignment	{ led[0] }	{ LOCATION = B14; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ led[1] }	{ LOCATION = B15; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ led[2] }	{ LOCATION = B16; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ led[3] }	{ LOCATION = C15; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ led[4] }	{ LOCATION = C16; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ led[5] }	{ LOCATION = E13; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ led[6] }	{ LOCATION = E16; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ led[7] }	{ LOCATION = F16; IOSTANDARD = LVCMOS33; }
+# 板间串口（杜邦线）：J1 = TX -> 看板 P4；K2 = RX <- 看板 N4；GND 共地
+set_pin_assignment	{ link_tx }	{ LOCATION = M4; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; }
+set_pin_assignment	{ link_rx }	{ LOCATION = N3; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+# OV5640 模块插 P2 左侧 40 针最上端：模块 3.3V/GND 对 P2-1/P2-2，模块 GND 一排对 P2 偶数针，3.3V 一排对奇数针
+#   P2-2 GND  4 SCL  6 SDA  8 D0  10 D2  12 D4  14 D6  16 PCLK  18 PWDN
+#   P2-1 3V3  3 VSYNC  5 HREF  7 RST  9 D1  11 D3  13 D5  15 D7  17 FLASH（模块自己控制，不接）
+set_pin_assignment	{ cam_scl }	{ LOCATION = R5; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ cam_sda }	{ LOCATION = T6; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ cam_vsync }	{ LOCATION = T4; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ cam_href }	{ LOCATION = T5; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ cam_rst_n }	{ LOCATION = T7; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ cam_pwdn }	{ LOCATION = P6; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ cam_pclk }	{ LOCATION = M6; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ cam_d[0] }	{ LOCATION = T8; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ cam_d[1] }	{ LOCATION = T9; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ cam_d[2] }	{ LOCATION = R9; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ cam_d[3] }	{ LOCATION = T12; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ cam_d[4] }	{ LOCATION = R12; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ cam_d[5] }	{ LOCATION = T13; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ cam_d[6] }	{ LOCATION = N5; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ cam_d[7] }	{ LOCATION = P5; IOSTANDARD = LVCMOS33; }
+# 视频串口（3.125Mbps）：P2-37 P12 -> 看板 M1，GND 用板间串口那根共地
+# 云台舵机 PWM（3.3V 信号）：P2-35 M12 水平、P2-36 N12 俯仰；舵机红线接 5V（P2-39 或独立电源），棕/黑线接 GND（P2-40）
+set_pin_assignment	{ servo_pan }	{ LOCATION = M12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; }
+set_pin_assignment	{ servo_tilt }	{ LOCATION = N12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; }
+set_pin_assignment	{ vid_tx }	{ LOCATION = P12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; }
+# I2C OLED (SSD1306 128x64, 0x3C): open-drain SCL/SDA
+set_pin_assignment	{ oled_scl }	{ LOCATION = D1; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ oled_sda }	{ LOCATION = E1; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
