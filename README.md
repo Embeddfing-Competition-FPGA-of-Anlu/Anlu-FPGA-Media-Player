@@ -144,7 +144,6 @@ Finish/prj 1/
 - 控制板：`sender_board/td/sender.al`，顶层模块为 `sender_top`。
 - 显示板：`src/td_project/HDMI1.4b_Transmitter_v1.0.al`，顶层模块为 `top`。
 
-`work/` 和备份目录中保留了一些开发过程中的版本，编译时以这两个主工程实际引用的文件为准。
 
 ## 运行方法
 
